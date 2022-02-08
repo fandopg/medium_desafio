@@ -8,13 +8,13 @@
     <title>Medium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-    <div class="container w-75">
+    <div class="container">
         <div class="p-3 border-bottom">
             <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/40/40/1*CvejhRq3NYsivxILYXEdfA.jpeg"
                 alt="">
@@ -23,7 +23,7 @@
         <div class="pb-3 my-5 d-flex">
             <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/60/60/1*qSPpwcLzzjFoDA3G1tYDzw.jpeg"
                 alt="">
-            <div class="d-flex flex-column justify-content-between">
+            <div class="d-flex flex-column justify-content-between flex-grow-1">
                 <p class="m-0">Aditya Yaduvanshi</p>
                 <div>
                     <span class="text-secondary">Dec 28, 2021 · 5 min read · </span><svg width="16" height="16"
@@ -31,9 +31,25 @@
                         <path
                             d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm2.8 8.51l-3.69 2.46a.62.62 0 0 1-.96-.5V5.53a.62.62 0 0 1 .96-.51l3.7 2.46a.62.62 0 0 1 0 1.02z"
                             fill="#292929"></path>
-                    </svg><span class=""> Listen</span>
+                    </svg><span class="text-success"> Listen</span>
                 </div>
             </div>
+            <a href="#" tabindex="0" class="d-lg-none" data-bs-toggle="popover" data-bs-placement="bottom"
+                data-bs-trigger="focus" data-bs-html="true" data-bs-content="
+                    <a href='#' class='text-dark text-decoration-none'>
+                        <p>🚫 Show less like this</p>
+                    <hr>
+                    <p>Mute this author</p>
+                    <p>Mute this publication</p>
+                    <p>Report</p></a>
+
+                ">
+                <svg class="bk kt mv" width="25" height="25">
+                    <path
+                        d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </a>
         </div>
         <h1 class="fw-bold">How JavaScript Works behind the scenes?</h1>
         <h3 class="text-secondary">An overview walk-through of all the core components that are involved in the
@@ -179,7 +195,7 @@
                 </svg>
                 <span>16</span>
             </div>
-            <div>
+            <div class="mb-5">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" class="cm vw">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M15 27a12 12 0 1 0 0-24 12 12 0 0 0 0 24zm4.95-16.17a2.67 2.67 0 0 0-4.6 1.84c0 .2.03.41.05.62a7.6 7.6 0 0 1-5.49-2.82 3 3 0 0 0-.38 1.34c.02.94.49 1.76 1.2 2.23a2.53 2.53 0 0 1-1.2-.33v.04c0 1.28.92 2.36 2.14 2.62-.23.05-.46.08-.71.1l-.21-.02-.27-.03a2.68 2.68 0 0 0 2.48 1.86A5.64 5.64 0 0 1 9 19.38a7.62 7.62 0 0 0 4.1 1.19c4.9 0 7.58-4.07 7.57-7.58v-.39c.52-.36.97-.83 1.33-1.38-.48.23-1 .37-1.53.43.56-.33.96-.86 1.15-1.48-.5.31-1.07.53-1.67.66z"
@@ -212,198 +228,177 @@
                 </svg>
             </div>
         </div>
-
-        <!-- card -->
-        <div class="container d-flex flex-column py-5 border-bottom">
-            <div class="pb-3">
-                <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/30/30/1*qSPpwcLzzjFoDA3G1tYDzw.jpeg"
-                    alt="">
-                <span>Aditya Yaduvanshi <span class="text-secondary">in</span> Dev Genius <span class="text-secondary">·
-                        Dec
-                        28, 2021</span></span>
-            </div>
-            <div class="d-flex">
-                <div class="col-9">
-                    <h4 class="fw-bold">How JavaScript Works behind the scenes?</h4>
-                    <div>
-                        <p>
-                            An overview walk-through of all the core components that are involved in the execution of
-                            javaScript
-                            code. — As JavaScript is getting more and more popular, teams are leveraging its support on
-                            many
-                            levels
-                            in their stack —...
-                        </p>
-
-                    </div>
-                    <div class="d-flex justify-content-between pt-4">
-                        <div>
-                            <span class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Java
-                                Script</span>
-                            <span class="text-secondary">5 min read · Because you follow Web-development</span>
-                        </div>
-                        <div>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
-                                <path
-                                    d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
-                                    fill="#292929"></path>
-                            </svg>
-                            <svg class="bk kt mv" width="25" height="25">
-                                <path
-                                    d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <img class="float-end" src="https://miro.medium.com/fit/c/140/140/1*dnbk_d4BSiIJ8ZRdfog8jg.jpeg"
-                        alt="">
-                </div>
-            </div>
-        </div>
-        <!-- end of card -->
-        <!-- card -->
-        <div class="container d-flex flex-column py-5 border-bottom">
-            <div class="pb-3">
-                <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/30/30/1*nguBSHdpmneK9MYsFuBbzw.jpeg"
-                    alt="">
-                <span>Bartosz Salwiczek<span class="text-secondary"></span><span class="text-secondary">· 5 days
-                        ago</span></span>
-            </div>
-            <div class="d-flex">
-                <div class="col-9">
-                    <h4 class="fw-bold">4 most important features coming in ES2022 that you should know about</h4>
-                    <div>
-                        <p>
-                            ECMAScript 2022 is a new JavaScript standard that is going to be released in June 2022.
-                            Let’s
-                            overview the most important changes that would...
-                        </p>
-
-                    </div>
-                    <div class="d-flex justify-content-between pt-4">
-                        <div>
-                            <span class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Java
-                                Script</span>
-                            <span class="text-secondary">3 min read · Because you follow Web-development</span>
-                        </div>
-                        <div>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
-                                <path
-                                    d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
-                                    fill="#292929"></path>
-                            </svg>
-                            <svg class="bk kt mv" width="25" height="25">
-                                <path
-                                    d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <img class="float-end" src="https://miro.medium.com/fit/c/140/140/1*jPU5hOFnsCzzzFZXu9MI2g.png"
-                        alt="">
-                </div>
-            </div>
-        </div>
-        <!-- end of card -->
-        <!-- card -->
-        <div class="container d-flex flex-column py-5 border-bottom">
-            <div class="pb-3">
-                <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/30/30/1*1DT6HRN4ddYXJh_byccShA.png"
-                    alt="">
-                <span>Sharan Kumar Ravindran<span class="text-secondary"> in </span>Towards Data Science<span
-                        class="text-secondary">· Jan 19</span></span>
-            </div>
-            <div class="d-flex">
-                <div class="col-9">
-                    <h4 class="fw-bold">A Complete 20-Week Guide to Self-Learn Data Science Fundamentals for Free</h4>
-                    <div>
-                        <p>
-                            A step-by-step guide to learn all the key concepts and become job-ready — Introduction
-                            Self-learning data science can be stressful. There are a...
-                        </p>
-
-                    </div>
-                    <div class="d-flex justify-content-between pt-4">
-                        <div>
-                            <span class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Data
-                                Science</span>
-                            <span class="text-secondary">11 min read · Because you follow Machine-learning</span>
-                        </div>
-                        <div>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
-                                <path
-                                    d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
-                                    fill="#292929"></path>
-                            </svg>
-                            <svg class="bk kt mv" width="25" height="25">
-                                <path
-                                    d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <img class="float-end" src="https://miro.medium.com/fit/c/140/140/1*Rd9IZ3SLf5vJJ_qCd6dz9w.jpeg"
-                        alt="">
-                </div>
-            </div>
-        </div>
-        <!-- end of card -->
-        <!-- card -->
-        <div class="container d-flex flex-column py-5 border-bottom">
-            <div class="pb-3">
-                <img class="rounded-circle me-2" src="https://miro.medium.com/fit/c/30/30/1*bgT8e6IktuOflfycszQKCw.jpeg"
-                    alt="">
-                <span>Sinem Günel<span class="text-secondary"> in </span>Personal Growth<span class="text-secondary">·
-                        Jan
-                        11</span></span>
-            </div>
-            <div class="d-flex">
-                <div class="col-9">
-                    <h4 class="fw-bold">5 Daily Habits That Harm Your Focus</h4>
-                    <div>
-                        <p>
-                            And how to fix it. — If your life is anything like mine, your ability to get things done is
-                            often
-                            disturbed by distractions. You know what you want, and you’re motivated to make it happen,
-                            but
-                            you often find yourself stuc...
-                        </p>
-
-                    </div>
-                    <div class="d-flex justify-content-between pt-4">
-                        <div>
-                            <span
-                                class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Productivity</span>
-                            <span class="text-secondary">8 min read · Because you follow Psychology</span>
-                        </div>
-                        <div>
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
-                                <path
-                                    d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
-                                    fill="#292929"></path>
-                            </svg>
-                            <svg class="bk kt mv" width="25" height="25">
-                                <path
-                                    d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
-                                    fill-rule="evenodd"></path>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <img class="float-end" src="https://miro.medium.com/fit/c/140/140/1*-xKSUiRl-7QkFXQfxSN4NA.jpeg"
-                        alt="">
-                </div>
-            </div>
-        </div>
-        <!-- end of card -- -->
     </div>
+    <div class="conitainer-fluid bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between pt-5 fs-5">
+                <span class="fw-bold">More from Dev Genius</span>
+                <button class="btn btn-success rounded-pill">Follow</button>
+            </div>
+            <span class="text-secondary fs-6">Coding, Tutorials, News, UX, UI and much more related to
+                development</span>
+
+            <!-- card -->
+            <div class="container d-flex flex-column py-5 border-bottom">
+                <div class="pb-3">
+                    <img class="rounded-circle me-2"
+                        src="https://miro.medium.com/fit/c/30/30/1*NX5n6p8en2I26YPr6jxogQ.jpeg" alt="">
+                    <span>Yujian Tang<span class="text-secondary"></span><span class="text-secondary">·
+                            Dec
+                            28, 2021</span></span>
+                </div>
+                <div class="d-flex">
+                    <div class="col-9">
+                        <h4 class="fw-bold">3 Surprising Python Resources to Turbocharge Your Skills</h4>
+                        <div>
+                            <p class="d-none d-md-block pb-4">
+                                Get a leg up on 90% of people learning Python with these resources — The best way to
+                                learn software skills in general, and especially programming, i...
+                            </p>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span
+                                    class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Python</span>
+                                <span class="text-secondary">4 min read</span>
+                            </div>
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
+                                    <path
+                                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                                        fill="#292929"></path>
+                                </svg>
+                                <svg class="bk kt mv" width="25" height="25">
+                                    <path
+                                        d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-start">
+                        <img class="d-none d-md-block"
+                            src="https://miro.medium.com/fit/c/140/140/0*uRVgFRchSpXSkmtG.jpg" alt="">
+                        <img class="d-md-none" src="https://miro.medium.com/fit/c/140/140/0*uRVgFRchSpXSkmtG.jpg" alt=""
+                            width="56px" height="56px">
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+            <!-- card -->
+            <div class="container d-flex flex-column py-5 border-bottom">
+                <div class="pb-3">
+                    <img class="rounded-circle me-2"
+                        src="https://miro.medium.com/fit/c/30/30/1*PnlocJr1v2aRBM77ZA5Zqw.jpeg" alt="">
+                    <span>Sunil Bhardwaj<span class="text-secondary"></span><span class="text-secondary">· Dec 28,
+                            2021</span></span>
+                </div>
+                <div class="d-flex">
+                    <div class="col-9">
+                        <h4 class="fw-bold">Chapter 6: Tableau CRM Dashboard Building Basics 📊 📈 📉</h4>
+                        <div>
+                            <p class="d-none d-md-block pb-4">
+                                Chapter 6: Tableau CRM Dashboard Building Basics 📊 📈 📉 The benefit of using a
+                                template to create a dashboard When we create a dashboard, w...
+                            </p>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span
+                                    class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Salesforce</span>
+                                <span class="text-secondary">10 min read</span>
+                            </div>
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
+                                    <path
+                                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                                        fill="#292929"></path>
+                                </svg>
+                                <svg class="bk kt mv" width="25" height="25">
+                                    <path
+                                        d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-start">
+                        <img class="d-none d-md-block"
+                            src="https://miro.medium.com/fit/c/140/140/1*bv2AgCyxLSfJoeAYaHES5Q.png" alt="">
+                        <img class="d-md-none" src="https://miro.medium.com/fit/c/140/140/1*bv2AgCyxLSfJoeAYaHES5Q.png"
+                            alt="" width="56px" height="56px">
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+            <!-- card -->
+            <div class="container d-flex flex-column py-5 border-bottom">
+                <div class="pb-3">
+                    <img class="rounded-circle me-2"
+                        src="https://miro.medium.com/fit/c/30/30/1*1DT6HRN4ddYXJh_byccShA.png" alt="">
+                    <span>Nabendu Biswas<span class="text-secondary"></span><span class="text-secondary">· Dec 28,
+                            2021</span></span>
+                </div>
+                <div class="d-flex">
+                    <div class="col-9">
+                        <h4 class="fw-bold">Learning NodeJs by creating a Notes app
+                        </h4>
+                        <div>
+                            <p class="d-none d-md-block pb-4">
+                                We will start learning about NodeJS from the beginning of this series and will jump
+                                directly into the coding part. What and why use NodeJS a lot of us know and skip those
+                                details here. You can find this in video format on...
+                            </p>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <span
+                                    class="badge rounded-pill topic_bg_color text-dark text-dark fw-normal p-2">Nodejs</span>
+                                <span class="text-secondary">9 min read</span>
+                            </div>
+                            <div>
+                                <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="mu">
+                                    <path
+                                        d="M18 2.5a.5.5 0 0 1 1 0V5h2.5a.5.5 0 0 1 0 1H19v2.5a.5.5 0 1 1-1 0V6h-2.5a.5.5 0 0 1 0-1H18V2.5zM7 7a1 1 0 0 1 1-1h3.5a.5.5 0 0 0 0-1H8a2 2 0 0 0-2 2v14a.5.5 0 0 0 .8.4l5.7-4.4 5.7 4.4a.5.5 0 0 0 .8-.4v-8.5a.5.5 0 0 0-1 0v7.48l-5.2-4a.5.5 0 0 0-.6 0l-5.2 4V7z"
+                                        fill="#292929"></path>
+                                </svg>
+                                <svg class="bk kt mv" width="25" height="25">
+                                    <path
+                                        d="M5 12.5c0 .55.2 1.02.59 1.41.39.4.86.59 1.41.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41A1.93 1.93 0 0 0 7 10.5c-.55 0-1.02.2-1.41.59-.4.39-.59.86-.59 1.41zm5.62 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.42.59.55 0 1.02-.2 1.41-.59.4-.39.59-.86.59-1.41 0-.55-.2-1.02-.59-1.41a1.93 1.93 0 0 0-1.41-.59c-.55 0-1.03.2-1.42.59-.39.39-.58.86-.58 1.41zm5.6 0c0 .55.2 1.02.58 1.41.4.4.87.59 1.43.59.56 0 1.03-.2 1.42-.59.39-.39.58-.86.58-1.41 0-.55-.2-1.02-.58-1.41a1.93 1.93 0 0 0-1.42-.59c-.56 0-1.04.2-1.43.59-.39.39-.58.86-.58 1.41z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end align-items-start">
+                        <img class="d-none d-md-block"
+                            src="https://miro.medium.com/fit/c/140/140/1*6BqmdNiOxPv9wNjNuhZDVg.jpeg" alt="">
+                        <img class="d-md-none" src="https://miro.medium.com/fit/c/140/140/1*6BqmdNiOxPv9wNjNuhZDVg.jpeg"
+                            alt="" width="56px" height="56px">
+                    </div>
+                </div>
+            </div>
+            <!-- end of card -->
+            <div class="text-center">
+                <button class="btn btn-success rounded-pill m-5 text-center">Read more from Dev Genius</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
 </body>
 
 </html>
