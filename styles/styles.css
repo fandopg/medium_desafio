@@ -1,5 +1,5 @@
 body {
-    width: 1400px;
+
     font-family: 'Antic Slab',
         serif;
 }
@@ -10,14 +10,22 @@ body {
 
 @media (min-width: 992px){
     .menuLeft{
-    
         width: auto;
         height: 100%;
     }
     .iconSpace{
         padding: 0px 0px 35px;
     }
+    .menuRigth{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 395px;
+            padding: 0px 35px;
+    }
 }
+
 
 @media (max-width: 991px) {
 
@@ -25,10 +33,10 @@ body {
         position: fixed;
         bottom: 0;
         left: 0;
-    
         height: auto;
         width: 100%;
     }
+
     .iconSpace{
         margin-left: 6em;
     }   
