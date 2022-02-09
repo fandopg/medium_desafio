@@ -1,5 +1,5 @@
 body {
-    width: 1400px;
+
     font-family: 'Antic Slab',
         serif;
 }
@@ -16,7 +16,16 @@ body {
     .iconSpace{
         padding: 0px 0px 35px;
     }
+    .menuRigth{
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 395px;
+            padding: 0px 35px;
+    }
 }
+
 
 @media (max-width: 991px) {
 
@@ -27,16 +36,7 @@ body {
         height: auto;
         width: 100%;
     }
-    .menuRigth{
-        width: auto;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        right: 0;
-        border: 2px solid black;
-        height: auto;
-        width: 100%;
-    }
+
     .iconSpace{
         margin-left: 6em;
     }   
